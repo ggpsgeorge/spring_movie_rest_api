@@ -1,7 +1,6 @@
 package com.ggpsgeorge.spring_movie_rest_api;
 
-import java.util.UUID;
-
+import org.bson.types.ObjectId;
 import org.springframework.data.annotation.Id;
 
 import lombok.AllArgsConstructor;
@@ -13,7 +12,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class Review {
     @Id
-    protected UUID id;
+    protected ObjectId id;
     // TODO: Create a user class that can have many reviews
     private String review_body;
 }

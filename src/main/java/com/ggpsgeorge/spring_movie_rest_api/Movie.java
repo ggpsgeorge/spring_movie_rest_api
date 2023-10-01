@@ -29,7 +29,6 @@ public class Movie {
     // and a movie can have many backdrops
     private List<String> backdrops;
     
-    // TODO: Make reference to reviewIds that are type uuid
-    // @DocumentReference
-    private List<String> reviewIds;
+    // TODO: Make reference to reviewIds 
+    private List<ObjectId> reviewIds;
 }
