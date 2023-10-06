@@ -1,10 +1,10 @@
 package com.ggpsgeorge.spring_movie_rest_api;
 
 import java.util.List;
-
 import org.bson.types.ObjectId;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
+import org.springframework.data.mongodb.core.mapping.DocumentReference;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -30,5 +30,6 @@ public class Movie {
     private List<String> backdrops;
     
     // TODO: Make reference to reviewIds 
-    private List<ObjectId> reviewIds;
+    @DocumentReference
+    private List<Review> reviews;
 }

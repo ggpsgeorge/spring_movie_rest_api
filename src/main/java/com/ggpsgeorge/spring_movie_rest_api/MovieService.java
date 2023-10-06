@@ -32,13 +32,13 @@ public class MovieService {
     public String deleteMovie(ObjectId id){
         Movie existingMovie = findById(id).get();
         movieRepository.deleteById(id);
-        return "The movie " + existingMovie.getTitle() + "(" + existingMovie.id.toString() + ")" + " was deleted!";
+        return "The movie " + existingMovie.getTitle() + "(" + existingMovie.getId().toString() + ")" + " was deleted!";
     }
 
     public String deleteMovieByImdbId(String imdbid){
         Movie existingMovie = findByImdbId(imdbid).get();
         movieRepository.deleteByImdbId(imdbid);
-        return "The movie " + existingMovie.getTitle() + "(" + existingMovie.id.toString() + ")" + " was deleted!";
+        return "The movie " + existingMovie.getTitle() + "(" + existingMovie.getId().toString() + ")" + " was deleted!";
 
     }
 
@@ -50,7 +50,7 @@ public class MovieService {
         existingMovie.setGenres(movie.getGenres());
         existingMovie.setBackdrops(movie.getBackdrops());
         existingMovie.setPoster(movie.getPoster());
-        existingMovie.setReviewIds(movie.getReviewIds());
+        existingMovie.setReviews(movie.getReviews());
         
         return movieRepository.save(existingMovie);
     }
