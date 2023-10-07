@@ -13,7 +13,6 @@ public class ReviewService {
     @Autowired
     ReviewRepository reviewRepository;
 
-    // I guess i have to find the movie and then update
     public Review addReview(Review review){
         return reviewRepository.save(review);
     }

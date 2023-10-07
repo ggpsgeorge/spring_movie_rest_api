@@ -23,13 +23,9 @@ public class Movie {
     private String releaseDate;
     private String trailerLink;
     private List<String> genres;
-    // TODO: Create a img class that can be a poster
     private String poster; 
-    // TODO: Create a img class that is a backdrop, 
-    // and a movie can have many backdrops
     private List<String> backdrops;
     
-    // TODO: Make reference to reviewIds 
     @DocumentReference
     private List<Review> reviews;
 }

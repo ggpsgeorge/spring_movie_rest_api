@@ -15,6 +15,5 @@ import lombok.NoArgsConstructor;
 public class Review {
     @Id
     protected ObjectId id;
-    // TODO: Create a user class that can have many reviews
     private String review_body;
 }
