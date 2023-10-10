@@ -1,1 +1,1 @@
-Spring REST API based on the freecodecamp [Fullstack Tutorial Video](https://www.youtube.com/watch?app=desktop&v=5PdEmeopJVQ). The project implemented the CRUD methods that were missing in the tutorial.
+Spring REST API based on the freecodecamp [Fullstack Tutorial Video](https://www.youtube.com/watch?app=desktop&v=5PdEmeopJVQ). The project implements the missing CRUD methods that were not present in the tutorial.
