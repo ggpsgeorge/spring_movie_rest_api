@@ -1,1 +1,1 @@
-Spring REST API based on the freecodecamp [Fullstack Tutorial Video](https://www.youtube.com/watch?app=desktop&v=5PdEmeopJVQ). The project implements the missing CRUD methods that were not present in the tutorial.
+The project implements the CRUD methods that of a simple REST movie API with MongoDB.
